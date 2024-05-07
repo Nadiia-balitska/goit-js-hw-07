@@ -12,3 +12,53 @@ body {
   color: #212121;
   line-height: 1.5;
 }
+img {
+  display: block;
+  max-width: 100%;
+}
+.list-item {
+  width: 360px;
+  height: 300px;
+}
+@media only screen and (min-width: 768px) {
+  .list-item {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .list-item {
+    width: calc((100% - 48px) / 3);
+  }
+}
+/* .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px 24px;
+  padding: 100px, 110px;
+  margin: 0 auto;
+} */
+.gallery {
+  display: flex;
+  gap: 8px;
+  list-style-type: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .gallery {
+    flex-wrap: wrap;
+    gap: 48px 24px;
+  }
+}
+@media only screen and (min-width: 1158px) {
+  .gallery {
+    justify-content: center;
+  }
+}
