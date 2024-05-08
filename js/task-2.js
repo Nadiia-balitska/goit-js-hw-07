@@ -46,7 +46,7 @@ const makeGallery = document.querySelector('.gallery');
 
 function markup(array) {
   return array
-    .map(i => `<li class = 'list-item'><div class ='gallery-wrapper'><img src='${i.url}' alt = '${i.alt}'/></div> </li>`)
+    .map(i => `<li class = 'list-item'><div class ='gallery-wrapper'><img class = 'img-task2' src='${i.url}' alt = '${i.alt}'/></div> </li>`)
     .join('');
 }
 // const div = document.createElement('div');

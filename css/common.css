@@ -15,6 +15,7 @@ h6 {
 
 body {
   /* margin: 16px; */
+
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
     Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -23,7 +24,9 @@ body {
   color: #212121;
   line-height: 1.5;
 }
-img {
+
+/* #region task2  */
+.img-task2 {
   display: block;
 
   object-fit: cover;
@@ -33,7 +36,6 @@ img {
 .list-item {
   height: 300px;
   max-width: 360px;
-  /* width: calc((100% - 48px) / 3); */
 }
 @media only screen and (min-width: 768px) {
   .list-item {
@@ -45,15 +47,7 @@ img {
     width: calc((100% - 48px) / 3);
   }
 }
-/* .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 48px 24px;
-  padding: 100px, 110px;
-  margin: 0 auto;
-} */
+
 .gallery {
   display: flex;
   flex-wrap: wrap;
@@ -80,3 +74,231 @@ img {
     padding: 100px, 156px;
   }
 }
+/* #endregion tas2 */
+
+/* #region task 3 */
+.input-task3 {
+  width: 360px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  padding-left: 16px;
+}
+
+.title-output {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+/* #endregion tas3 */
+
+/* #region task4 */
+
+.login-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* gap: 16px; */
+  padding: 24px;
+  width: 408px;
+  height: 256px;
+  margin: 0;
+  background-color: #fff;
+}
+
+.label-task4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.email-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border: 1px solid #212121;
+}
+
+.pas-input {
+  width: 360px;
+  height: 40px;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  margin-top: 8px;
+  border: 1px solid #212121;
+  background-color: transparent;
+}
+.email-input::placeholder {
+  color: #ffff;
+}
+.pas-input::placeholder {
+  color: #ffff;
+}
+
+.btn-task4 {
+  display: flex;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fff;
+  background-color: #4e75ff;
+  min-width: 86px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-right: 274px;
+}
+
+/* #endregion task4 */
+
+/* #region task5 */
+.widget {
+  border-radius: 8px;
+  padding: 100px 88px;
+  width: 345px;
+  height: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #fff;
+}
+.color {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.change-color {
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 148px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4e75ff;
+  cursor: pointer;
+  border: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+/* #endregion task5 */
+
+/* #region task6 */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 16px;
+
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 104px;
+  background: #f6f6fe;
+}
+
+.input-task6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+
+  border: 1px solid #808080;
+  border-radius: 8px;
+  padding: 8px 72px;
+  width: 150px;
+  height: 40px;
+  background: #f6f6fe;
+}
+.btn-create {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  height: 40px;
+  border: none;
+  cursor: pointer;
+  background: #4e75ff;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.btn-destroy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  border: none;
+  cursor: pointer;
+
+  border-radius: 8px;
+  padding: 8px 16px;
+  min-width: 120px;
+  height: 40px;
+  background: #ff4e4e;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+.div-box {
+  border-radius: 8px;
+  padding: 32px;
+  width: 486px;
+  height: 134px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+  background: #f6f6fe;
+}
+.newDiv {
+  width: 30px;
+  height: 30px;
+}
+
+/* #endregion task6 */
