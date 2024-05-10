@@ -287,12 +287,10 @@ body {
 .div-box {
   border-radius: 8px;
   padding: 32px;
-  width: 486px;
-  height: 134px;
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   background: #f6f6fe;
 }
