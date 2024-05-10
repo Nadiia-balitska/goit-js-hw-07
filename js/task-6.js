@@ -15,6 +15,7 @@ btnDestroyEl.addEventListener('click', destroyBoxes);
 
 
 function createBoxes() {
+  divBoxesEl.innerHTML = '';
   const amount = Number(inputEl.value);
   console.log(amount);
   if (amount < 1 || amount >= 100) {
@@ -24,22 +25,26 @@ function createBoxes() {
   
    inputEl.value = '';
 
-
+  const container = document.createDocumentFragment();
   for (let i = 0; i < amount; i++){
     const newDiv = document.createElement('div');
 newDiv.classList.add('newDiv');
-    newDiv.style.width = `${10* i}px`;
-    newDiv.style.height = `${10* i}px`;
-    divBoxesEl.appendChild(newDiv);
+    newDiv.style.width = `${30 + 10* i}px`;
+    newDiv.style.height = `${30 + 10* i}px`;
+    // divBoxesEl.appendChild(newDiv);
+    
     newDiv.style.backgroundColor = getRandomHexColor();
+    
+    container.appendChild(newDiv);
   
   }
-
+  divBoxesEl.append(container);
 }
 
 function destroyBoxes() {
-  
   divBoxesEl.innerHTML = "";
+  
+
  inputEl.value = '';
 }
 
